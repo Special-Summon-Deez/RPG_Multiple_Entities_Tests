@@ -1,5 +1,5 @@
 class_name enemy_scene
-extends Node2D
+extends VBoxContainer
 
 var enemy_stats:enemy = null
 
@@ -13,7 +13,6 @@ func _ready():
 	print(enemy_stats.name)
 	print(enemy_stats.health)
 	$Enemy_Texture.texture = enemy_stats.texture
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
